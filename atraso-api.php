@@ -39,4 +39,8 @@ function calcularAtraso($id_contrato, $dt_calculo) {
     return $resultados;
 }
 
+function calcularJurosMoratorios($taxa_juros, $dias_atraso) {
+    return $taxa_juros * $dias_atraso / 30; // Caso seja uma taxa mensal
+}
+
 ?>
